@@ -1,0 +1,55 @@
+body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .poster-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 100px auto;
+    overflow: hidden;
+  }
+  
+  #poster-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .movie-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .tagline {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  h1{
+    color: red;
+  }
+  @media (max-width: 600px){
+    .poster-container{
+        width: 100%;
+        height: auto;
+    }
+  }
